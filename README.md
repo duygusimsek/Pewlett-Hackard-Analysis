@@ -14,6 +14,19 @@ To be able to understand the data and find the connections between the informati
 
 After finding the number of people who are eligible for retirement in the previous analysis; for this analysis, the number of retiring employees per title was determined and the employees who are eligible to participate in a mentorship program were identified. 
 
+## Result
+
+The number of the employees who are retirement-ready and were born between January 1, 1952, and December 31, 1955, was determined by creating the “Retirement Titles Table”.  Because some of the employees had multiple titles, duplicate rows were removed and each employee’s recent title remained. To display the number of retirement-age employees by their job title, “Retiring Titles Table” was created. 
+
+The “Mentorship Eligibility Table” was created to determine the employees who are eligible to participate in a mentorship program. [Employee_Database_challenge.sql](https://github.com/duygusimsek/Pewlett-Hackard-Analysis/blob/main/Queries/Employee_Database_challenge.sql%20)
+
+* The “Retirement Titles Table” displays the retirement-ready employees’ list with each employee’s several work positions and work duration. [retirement_titles.csv](https://github.com/duygusimsek/Pewlett-Hackard-Analysis/blob/main/Data_csv/retirement_titles.csv)
+
+* The “Unique Titles Table” shows each retirement-ready employee’s most recent titles. [unique_titles.csv](https://github.com/duygusimsek/Pewlett-Hackard-Analysis/blob/main/Data_csv/unique_titles.csv)
+
+* The “Retiring Titles Table” displays the majority of the retirement-ready employees are Senior Engineers and Senior Staff and there are 2 managers. [retiring_titles.csv](https://github.com/duygusimsek/Pewlett-Hackard-Analysis/blob/main/Data_csv/retiring_titles.csv)
+
+* From the “Mentorship Eligibility Table” the information on retirement-ready employees’ age, work positions, and durations can be gathered. [mentorship_eligibilty.csv](https://github.com/duygusimsek/Pewlett-Hackard-Analysis/blob/main/Data_csv/mentorship_eligibilty.csv)
 
 ## Resources
 
