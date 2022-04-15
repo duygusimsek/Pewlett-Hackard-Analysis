@@ -70,12 +70,10 @@ GROUP BY td.dept_name, td.title
 ORDER BY td.dept_name DESC;
 
 --Qualified retirement-ready employees to mentor next generation.
-SELECT td.dept_name, td.title, COUNT(td.title) 
-INTO qualified_mentors
-FROM (SELECT title, dept_name from tit_by_dept) as td
---Retrieve the qualified most senior leaders to mentor next generation in each department 
-WHERE td.title IN ('Manager', 'Senior Staff', 'Technique Leader','Senior Engineer')
-GROUP BY td.dept_name, td.title
-ORDER BY td.dept_name DESC;
-
+SELECt me.title, COUNT(me.title) 
+INTO qualified_mentors_bytitle
+FROM mentorship_eligibility as me 
+--Retrieve the qualified most senior leaders to mentor next generation  
+WHERE me.title IN ('Manager', 'Senior Staff', 'Technique Leader','Senior Engineer')
+GROUP BY  me.title;
 
