@@ -28,6 +28,17 @@ The “Mentorship Eligibility Table” was created to determine the employees wh
 
 * From the “Mentorship Eligibility Table” the information on retirement-ready employees’ age, work positions, and durations can be gathered. [mentorship_eligibilty.csv](https://github.com/duygusimsek/Pewlett-Hackard-Analysis/blob/main/Data_csv/mentorship_eligibilty.csv)
 
+## Summary
+ 
+The result of the “Unique Titles Table” shows that  72,458 total employees are retirement-ready. Approximately 50.1% of the retiring employees are all level “Engineers”, 44.9% of the retiring employees are all level “Staff”, %4.9 of the retiring employees are “Technique Leader” and only 2 are managers. According to the information in the “Mentorship Eligibility Table” 1,549 employees are eligible to be mentors in the mentorship program.
+
+That information suggests that the impact of the “silver tsunami” will be very important and the future of the company needs to be planned. There are two important problems;
+
+1- All these opening positions for retire-employees have to be filled. For that matter, the impact on the department has to determine. (add the table link here)
+
+2- The mentoring program has to be planned for preparing the new employees. To do that planning, the number of 
+qualified, retirement-ready employees to mentor from each department needs to be identified.  (add the additional query here - add the table link here)
+
 ## Resources
 
 * Data Sources
