@@ -47,3 +47,35 @@ INNER JOIN titles as ti
 ON (e.emp_no = ti.emp_no)
 WHERE de.to_date = ('9999-01-01') AND (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 ORDER BY e.emp_no;
+
+--Summary additional queries 
+--Retirement employee nos by departments
+SELECT DISTINCT ON (emp_no)
+urt.emp_no,
+urt.title,
+d.dept_name
+INTO tit_by_dept
+FROM unique_retirement_titles as urt	
+INNER JOIN dept_emp as de
+ON (urt.emp_no = de.emp_no)
+INNER JOIN departments as d 
+ON (d.dept_no = de.dept_no)
+ORDER BY urt.emp_no, de.to_date DESC;
+
+-- The number of roles that need to be filled by title and department
+SELECT td.dept_name, td.title, COUNT(td.title) 
+INTO positions_to_fill
+FROM (SELECT title, dept_name from tit_by_dept) as td
+GROUP BY td.dept_name, td.title
+ORDER BY td.dept_name DESC;
+
+--Qualified retirement-ready employees to mentor next generation.
+SELECT td.dept_name, td.title, COUNT(td.title) 
+INTO qualified_mentors
+FROM (SELECT title, dept_name from tit_by_dept) as td
+--Retrieve the qualified most senior leaders to mentor next generation in each department 
+WHERE td.title IN ('Manager', 'Senior Staff', 'Technique Leader','Senior Engineer')
+GROUP BY td.dept_name, td.title
+ORDER BY td.dept_name DESC;
+
+
