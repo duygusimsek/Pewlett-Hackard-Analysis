@@ -30,28 +30,27 @@ The “Mentorship Eligibility Table” was created to determine the employees wh
 
 ## Summary
  
-The result of the “Unique Titles Table” shows that  72,458 total employees are retirement-ready. Approximately 50.1% of the retiring employees are all level “Engineers”, 44.9% of the retiring employees are all level “Staff”, %4.9 of the retiring employees are “Technique Leader” and only 2 are managers. According to the information in the “Mentorship Eligibility Table” 1,549 employees are eligible to be mentors in the mentorship program which is not enough when the the number of retirement-ready employees is considered. 
+The result of the “Unique Titles Table” shows that  72,458 total employees are retirement-ready. Approximately 50.1% of the retiring employees are all level “Engineers”, 44.9% of the retiring employees are all level “Staff”, %4.9 of the retiring employees are “Technique Leader” and only 2 are managers. According to the information in the “Mentorship Eligibility Table” 1,549 employees are eligible to be mentors in the mentorship program which is not enough when the number of retirement-ready employees is considered. 
 
 That information suggests that the impact of the “silver tsunami” will be very important and the future of the company needs to be planned. 
 
 There are two important problems;
 
- 1- All these opening positions for retire-employees have to be filled and  the impact on the department needs to determine. 
+1- All these opening positions for retired employees have to be filled and the impact on the department needs to determine. 
 
-For that matter, by writting additional queries, retirement-ready employees “titles by department” table was created and this table was used to create the “position to fill” table to determine the number of roles that need to be filled by title and department. [Employee_Database_challenge.sql](https://github.com/duygusimsek/Pewlett-Hackard-Analysis/blob/main/Queries/Employee_Database_challenge.sql%20)
+For that matter, by writing additional queries, the retirement-ready employee’s “titles by department” table were created and this table was used to create the “position to fill” table to determine the number of roles that need to be filled by title and department. [Employee_Database_challenge.sql](https://github.com/duygusimsek/Pewlett-Hackard-Analysis/blob/main/Queries/Employee_Database_challenge.sql%20)
 
-Examining those results shows some departments affected by the “silver tsunami” more than others. The most impacted departments are Development (18,368 employees) and Production (16,172 employees).  
+Examining those results shows some departments are affected by the “silver tsunami” more than others. The most impacted departments are Development (18,368 employees) and Production (16,172 employees).  
 
-There are 2 manager positions needs to be filled on Sales and Research departments. 
+Two manager positions need to be filled in the Sales and Research departments. 
 [tit_by_dept.csv](https://github.com/duygusimsek/Pewlett-Hackard-Analysis/blob/main/Data_csv/tit_by_dept.csv), 
 [positions_to_fill.csv](https://github.com/duygusimsek/Pewlett-Hackard-Analysis/blob/main/Data_csv/positions_to_fill.csv)
 
 
- 2- The mentoring program has to be planned for preparing the new employees. To do that planning, the number of 
-qualified, retirement-ready employees to mentor from each department needs to be identified. 
+2- The mentoring program has to be planned for preparing the new employees. To do that planning, the number of qualified, retirement-ready employees to mentor needs to be identified. 
 
-For that reason, the “titles by department” table used to create “qualified mentors” table which only has the count of experienced employees (Senior Engineer, Manager, Senior Staff and Technique Leader). 
-[qualified_mentors.csv](https://github.com/duygusimsek/Pewlett-Hackard-Analysis/blob/main/Data_csv/qualified_mentors.csv)
+For that reason, the “mentorship eligibility ” table was used to create the “qualified mentors by title” table which only has the count of experienced employees (Senior Engineer, Senior Staff, and Technique Leader). As a result, the company has only 816 retirement-ready employees who are eligible for the mentorship program. Because the “mentorship eligibility ” table does not have a Manager position on the list, the company does not have manager mentors. [qualified_mentors](https://github.com/duygusimsek/Pewlett-Hackard-Analysis/blob/main/Data_csv/qualified_mentors_bytitle.csv)
+
 
 
 ## Resources
